@@ -13,24 +13,25 @@ namespace СтажировкаDeeplay
 {
     public partial class Form2 : MetroFramework.Forms.MetroForm
     {
+        OleDbCommand command = new OleDbCommand();
         OleDbConnection connection = new OleDbConnection();
         public Form2()
         {
             InitializeComponent();
-            connection.ConnectionString = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = .\БДDeeplay.mdb";
+            connection.ConnectionString = @"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = ..\..\БДDeeplay.mdb";
 
         }
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "бДDeeplayDataSet.Должности". При необходимости она может быть перемещена или удалена.
-            this.должностиTableAdapter.Fill(this.бДDeeplayDataSet.Должности);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "бДDeeplayDataSet.Подразделение". При необходимости она может быть перемещена или удалена.
-            this.подразделениеTableAdapter.Fill(this.бДDeeplayDataSet.Подразделение);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "бДDeeplayDataSet.Руководители". При необходимости она может быть перемещена или удалена.
             this.руководителиTableAdapter.Fill(this.бДDeeplayDataSet.Руководители);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "бДDeeplayDataSet.Сотрудники". При необходимости она может быть перемещена или удалена.
-            this.сотрудникиTableAdapter.Fill(this.бДDeeplayDataSet.Сотрудники);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "бДDeeplayDataSet.Подразделение". При необходимости она может быть перемещена или удалена.
+            this.подразделениеTableAdapter.Fill(this.бДDeeplayDataSet.Подразделение);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "бДDeeplayDataSet.Должности". При необходимости она может быть перемещена или удалена.
+            this.должностиTableAdapter.Fill(this.бДDeeplayDataSet.Должности);
+
+
         }
 
         private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
@@ -49,7 +50,6 @@ namespace СтажировкаDeeplay
             {
                 
                 connection.Open();
-                OleDbCommand command = new OleDbCommand();
                 string query = "delete from Сотрудники where Код="+ id1.Text+"";
                 MessageBox.Show(query);
                 command.CommandText = query;
@@ -60,6 +60,7 @@ namespace СтажировкаDeeplay
             catch (Exception ex)
             {
                 MessageBox.Show("Error  " + ex);
+                connection.Close();
             }
         }
 
@@ -68,15 +69,16 @@ namespace СтажировкаDeeplay
             try
             {
                 connection.Open();
-                OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
                 command.CommandText = "INSERT INTO Сотрудники (Код,ДатаРождения,ФИО,Пол,Руководитель,Должность) values('" + id1.Text + "','" + date1.Text + "','" + fio1.Text + "','" + gender1.Text + "','" + director1.Text + "','" + post1.Text + "')";
                 command.ExecuteNonQuery();
                 MessageBox.Show("Данные сохранены");
+                connection.Close();
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Error  " + ex);
+                connection.Close();
             }
         }
 
@@ -115,7 +117,6 @@ namespace СтажировкаDeeplay
         private void metroButton3_Click(object sender, EventArgs e)
         {
             connection.Open();
-            OleDbCommand command = new OleDbCommand();
             command.Connection = connection;
             string query = "SELECT * from Сотрудники";
             command.CommandText = query;
@@ -131,7 +132,6 @@ namespace СтажировкаDeeplay
         private void metroButton4_Click(object sender, EventArgs e)
         {
             connection.Open();
-            OleDbCommand command = new OleDbCommand();
             command.Connection = connection;
             string query = "SELECT * from Руководители";
             command.CommandText = query;
@@ -203,7 +203,6 @@ namespace СтажировкаDeeplay
             try
             {
                 connection.Open();
-                OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
                 command.CommandText = "INSERT INTO Руководители (Код,ФИО,ДатаРождения,Пол,Подразделение,Должность) values('" + id2.Text + "','" + fio2.Text + "','" + date2.Text + "','" + gender2.Text + "','" + podr1.Text + "','" + post2.Text + "')";
                 command.ExecuteNonQuery();
@@ -213,6 +212,7 @@ namespace СтажировкаDeeplay
             catch (Exception ex)
             {
                 MessageBox.Show("Error  " + ex);
+                connection.Close();
             }
         }
 
@@ -221,7 +221,6 @@ namespace СтажировкаDeeplay
             try
             {
                 connection.Open();
-                OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
                 string query = "update Сотрудники set ДатаРождения='" + date1.Text + "' ,ФИО='" + fio1.Text + "' ,Пол='" + gender1.Text + "' ,Руководитель='" + director1.Text + "' ,Должность='" + post1.Text + "' where Код="+ id1.Text +"";
                 MessageBox.Show(query);
@@ -233,6 +232,7 @@ namespace СтажировкаDeeplay
             catch (Exception ex)
             {
                 MessageBox.Show("Error  " + ex);
+                connection.Close();
             }
         }
 
@@ -241,7 +241,6 @@ namespace СтажировкаDeeplay
             try
             {
                 connection.Open();
-                OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
                 string query = "update Руководители set ФИО='" + fio2.Text + "' ,ДатаРождения='" + date2.Text + "' ,Пол='" + gender2.Text + "' ,Подразделение='" + podr1.Text + "' ,Должность='" + post2.Text + "' where Код=" + id2.Text + "";
                 MessageBox.Show(query);
@@ -253,6 +252,7 @@ namespace СтажировкаDeeplay
             catch (Exception ex)
             {
                 MessageBox.Show("Error  " + ex);
+                connection.Close();
             }
         }
 
@@ -261,7 +261,6 @@ namespace СтажировкаDeeplay
             try
             {
                 connection.Open();
-                OleDbCommand command = new OleDbCommand();
                 command.Connection = connection;
                 string query = "delete from Руководители where Код=" + id2.Text + "";
                 MessageBox.Show(query);
@@ -273,6 +272,7 @@ namespace СтажировкаDeeplay
             catch (Exception ex)
             {
                 MessageBox.Show("Error  " + ex);
+                connection.Close();
             }
         }
     }

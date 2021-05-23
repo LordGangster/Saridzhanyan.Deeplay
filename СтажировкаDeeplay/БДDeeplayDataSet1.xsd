@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<xs:schema id="БДDeeplayDataSet" targetNamespace="http://tempuri.org/БДDeeplayDataSet.xsd" xmlns:mstns="http://tempuri.org/БДDeeplayDataSet.xsd" xmlns="http://tempuri.org/БДDeeplayDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+<xs:schema id="БДDeeplayDataSet1" targetNamespace="http://tempuri.org/БДDeeplayDataSet1.xsd" xmlns:mstns="http://tempuri.org/БДDeeplayDataSet1.xsd" xmlns="http://tempuri.org/БДDeeplayDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
   <xs:annotation>
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
@@ -305,7 +305,7 @@
       </DataSource>
     </xs:appinfo>
   </xs:annotation>
-  <xs:element name="БДDeeplayDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="БДDeeplayDataSet" msprop:Generator_UserDSName="БДDeeplayDataSet">
+  <xs:element name="БДDeeplayDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="БДDeeplayDataSet1" msprop:Generator_UserDSName="БДDeeplayDataSet1">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
         <xs:element name="Должности" msprop:Generator_TableClassName="ДолжностиDataTable" msprop:Generator_TableVarName="tableДолжности" msprop:Generator_TablePropName="Должности" msprop:Generator_RowDeletingName="ДолжностиRowDeleting" msprop:Generator_RowChangingName="ДолжностиRowChanging" msprop:Generator_RowEvHandlerName="ДолжностиRowChangeEventHandler" msprop:Generator_RowDeletedName="ДолжностиRowDeleted" msprop:Generator_UserTableName="Должности" msprop:Generator_RowChangedName="ДолжностиRowChanged" msprop:Generator_RowEvArgName="ДолжностиRowChangeEvent" msprop:Generator_RowClassName="ДолжностиRow">

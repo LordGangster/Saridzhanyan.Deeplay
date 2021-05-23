@@ -44,5 +44,16 @@ namespace СтажировкаDeeplay.Properties {
                 return ((string)(this["БДDeeplayConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\ruzan\\source\\repos\\Стажиров" +
+            "каDeeplay\\СтажировкаDeeplay\\bin\\Debug\\БДDeeplay.mdb;Persist Security Info=True")]
+        public string БДDeeplayConnectionString1 {
+            get {
+                return ((string)(this["БДDeeplayConnectionString1"]));
+            }
+        }
     }
 }

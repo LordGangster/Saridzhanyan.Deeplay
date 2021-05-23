@@ -47,7 +47,7 @@
       <HintPath>..\..\..\..\..\..\Program Files (x86)\MySQL\MySQL Connector Net 8.0.25\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
     </Reference>
     <Reference Include="System">
-      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -85,11 +85,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>БДDeeplayDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="БДАликаDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>БДАликаDataSet.xsd</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -125,17 +120,6 @@
     </None>
     <None Include="БДDeeplayDataSet.xss">
       <DependentUpon>БДDeeplayDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="БДАликаDataSet.xsc">
-      <DependentUpon>БДАликаDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="БДАликаDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>БДАликаDataSet.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="БДАликаDataSet.xss">
-      <DependentUpon>БДАликаDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

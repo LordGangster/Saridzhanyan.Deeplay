@@ -30,34 +30,36 @@ namespace СтажировкаDeeplay
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle31 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle32 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle33 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle34 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle35 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle36 = new System.Windows.Forms.DataGridViewCellStyle();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.списокРуководителейToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.посмотретьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.списокРабочихToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.edit = new MetroFramework.Controls.MetroButton();
+            this.date1 = new MetroFramework.Controls.MetroTextBox();
+            this.id1 = new MetroFramework.Controls.MetroTextBox();
             this.metroButton3 = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
             this.gender1 = new MetroFramework.Controls.MetroComboBox();
             this.director1 = new MetroFramework.Controls.MetroComboBox();
-            this.руководителиBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.бДDeeplayDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.бДDeeplayDataSet = new СтажировкаDeeplay.БДDeeplayDataSet();
             this.fio1 = new MetroFramework.Controls.MetroTextBox();
             this.post1 = new MetroFramework.Controls.MetroComboBox();
-            this.должностиBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.metroGrid2 = new MetroFramework.Controls.MetroGrid();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.edit2 = new MetroFramework.Controls.MetroButton();
+            this.date2 = new MetroFramework.Controls.MetroTextBox();
+            this.id2 = new MetroFramework.Controls.MetroTextBox();
             this.metroButton4 = new MetroFramework.Controls.MetroButton();
             this.metroButton5 = new MetroFramework.Controls.MetroButton();
             this.metroButton6 = new MetroFramework.Controls.MetroButton();
@@ -68,39 +70,27 @@ namespace СтажировкаDeeplay
             this.metroLabel3 = new MetroFramework.Controls.MetroLabel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.metroGrid1 = new MetroFramework.Controls.MetroGrid();
-            this.сотрудникиBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.подразделениеBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.сотрудникиTableAdapter = new СтажировкаDeeplay.БДDeeplayDataSetTableAdapters.СотрудникиTableAdapter();
-            this.руководителиTableAdapter = new СтажировкаDeeplay.БДDeeplayDataSetTableAdapters.РуководителиTableAdapter();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
+            this.бДDeeplayDataSet = new СтажировкаDeeplay.БДDeeplayDataSet();
+            this.должностиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.должностиTableAdapter = new СтажировкаDeeplay.БДDeeplayDataSetTableAdapters.ДолжностиTableAdapter();
             this.подразделениеBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.подразделениеTableAdapter = new СтажировкаDeeplay.БДDeeplayDataSetTableAdapters.ПодразделениеTableAdapter();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.должностиTableAdapter = new СтажировкаDeeplay.БДDeeplayDataSetTableAdapters.ДолжностиTableAdapter();
-            this.tableAdapterManager1 = new СтажировкаDeeplay.БДDeeplayDataSetTableAdapters.TableAdapterManager();
-            this.id1 = new MetroFramework.Controls.MetroTextBox();
-            this.date1 = new MetroFramework.Controls.MetroTextBox();
-            this.id2 = new MetroFramework.Controls.MetroTextBox();
-            this.date2 = new MetroFramework.Controls.MetroTextBox();
-            this.подразделениеBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
-            this.edit = new MetroFramework.Controls.MetroButton();
-            this.edit2 = new MetroFramework.Controls.MetroButton();
+            this.руководителиBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.руководителиTableAdapter = new СтажировкаDeeplay.БДDeeplayDataSetTableAdapters.РуководителиTableAdapter();
             this.contextMenuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.руководителиBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.бДDeeplayDataSetBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.бДDeeplayDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.должностиBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.сотрудникиBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.подразделениеBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.бДDeeplayDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.должностиBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.подразделениеBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.подразделениеBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.руководителиBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // contextMenuStrip1
@@ -169,6 +159,83 @@ namespace СтажировкаDeeplay
             this.tabPage1.Text = "Сотрудники";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // edit
+            // 
+            this.edit.Location = new System.Drawing.Point(884, 216);
+            this.edit.Name = "edit";
+            this.edit.Size = new System.Drawing.Size(75, 23);
+            this.edit.TabIndex = 16;
+            this.edit.Text = "Изменить";
+            this.edit.UseSelectable = true;
+            this.edit.Click += new System.EventHandler(this.edit_Click);
+            // 
+            // date1
+            // 
+            // 
+            // 
+            // 
+            this.date1.CustomButton.Image = null;
+            this.date1.CustomButton.Location = new System.Drawing.Point(92, 1);
+            this.date1.CustomButton.Name = "";
+            this.date1.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.date1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.date1.CustomButton.TabIndex = 1;
+            this.date1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.date1.CustomButton.UseSelectable = true;
+            this.date1.CustomButton.Visible = false;
+            this.date1.Lines = new string[] {
+        "Дата Рождения"};
+            this.date1.Location = new System.Drawing.Point(795, 87);
+            this.date1.MaxLength = 32767;
+            this.date1.Name = "date1";
+            this.date1.PasswordChar = '\0';
+            this.date1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.date1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.date1.SelectedText = "";
+            this.date1.SelectionLength = 0;
+            this.date1.SelectionStart = 0;
+            this.date1.ShortcutsEnabled = true;
+            this.date1.Size = new System.Drawing.Size(114, 23);
+            this.date1.TabIndex = 15;
+            this.date1.Text = "Дата Рождения";
+            this.date1.UseSelectable = true;
+            this.date1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.date1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // id1
+            // 
+            // 
+            // 
+            // 
+            this.id1.CustomButton.Image = null;
+            this.id1.CustomButton.Location = new System.Drawing.Point(4, 1);
+            this.id1.CustomButton.Name = "";
+            this.id1.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.id1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.id1.CustomButton.TabIndex = 1;
+            this.id1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.id1.CustomButton.UseSelectable = true;
+            this.id1.CustomButton.Visible = false;
+            this.id1.Lines = new string[] {
+        "ID"};
+            this.id1.Location = new System.Drawing.Point(795, 55);
+            this.id1.MaxLength = 32767;
+            this.id1.Name = "id1";
+            this.id1.PasswordChar = '\0';
+            this.id1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.id1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.id1.SelectedText = "";
+            this.id1.SelectionLength = 0;
+            this.id1.SelectionStart = 0;
+            this.id1.ShortcutsEnabled = true;
+            this.id1.Size = new System.Drawing.Size(26, 23);
+            this.id1.TabIndex = 14;
+            this.id1.Text = "ID";
+            this.id1.UseSelectable = true;
+            this.id1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.id1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            this.id1.Click += new System.EventHandler(this.id1_Click);
+            // 
             // metroButton3
             // 
             this.metroButton3.Location = new System.Drawing.Point(884, 253);
@@ -225,21 +292,6 @@ namespace СтажировкаDeeplay
             this.director1.TabIndex = 8;
             this.director1.UseSelectable = true;
             // 
-            // руководителиBindingSource
-            // 
-            this.руководителиBindingSource.DataMember = "Руководители";
-            this.руководителиBindingSource.DataSource = this.бДDeeplayDataSetBindingSource;
-            // 
-            // бДDeeplayDataSetBindingSource
-            // 
-            this.бДDeeplayDataSetBindingSource.DataSource = this.бДDeeplayDataSet;
-            this.бДDeeplayDataSetBindingSource.Position = 0;
-            // 
-            // бДDeeplayDataSet
-            // 
-            this.бДDeeplayDataSet.DataSetName = "БДDeeplayDataSet";
-            this.бДDeeplayDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // fio1
             // 
             // 
@@ -286,11 +338,6 @@ namespace СтажировкаDeeplay
             this.post1.TabIndex = 5;
             this.post1.UseSelectable = true;
             // 
-            // должностиBindingSource
-            // 
-            this.должностиBindingSource.DataMember = "Должности";
-            this.должностиBindingSource.DataSource = this.бДDeeplayDataSetBindingSource;
-            // 
             // metroLabel2
             // 
             this.metroLabel2.AutoSize = true;
@@ -316,37 +363,37 @@ namespace СтажировкаDeeplay
             this.metroGrid2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.metroGrid2.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.metroGrid2.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle31.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle31.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle31.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle31.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle31.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle31;
             this.metroGrid2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid2.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle32.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle32.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle32.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle32.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle32.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid2.DefaultCellStyle = dataGridViewCellStyle32;
             this.metroGrid2.EnableHeadersVisualStyles = false;
             this.metroGrid2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.metroGrid2.Location = new System.Drawing.Point(0, 0);
             this.metroGrid2.Name = "metroGrid2";
             this.metroGrid2.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid2.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle33.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle33.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle33.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle33.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle33.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid2.RowHeadersDefaultCellStyle = dataGridViewCellStyle33;
             this.metroGrid2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid2.Size = new System.Drawing.Size(792, 300);
@@ -385,6 +432,82 @@ namespace СтажировкаDeeplay
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Руководители";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // edit2
+            // 
+            this.edit2.Location = new System.Drawing.Point(886, 213);
+            this.edit2.Name = "edit2";
+            this.edit2.Size = new System.Drawing.Size(75, 23);
+            this.edit2.TabIndex = 23;
+            this.edit2.Text = "Изменить";
+            this.edit2.UseSelectable = true;
+            this.edit2.Click += new System.EventHandler(this.edit2_Click);
+            // 
+            // date2
+            // 
+            // 
+            // 
+            // 
+            this.date2.CustomButton.Image = null;
+            this.date2.CustomButton.Location = new System.Drawing.Point(92, 1);
+            this.date2.CustomButton.Name = "";
+            this.date2.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.date2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.date2.CustomButton.TabIndex = 1;
+            this.date2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.date2.CustomButton.UseSelectable = true;
+            this.date2.CustomButton.Visible = false;
+            this.date2.Lines = new string[] {
+        "Дата Рождения"};
+            this.date2.Location = new System.Drawing.Point(797, 82);
+            this.date2.MaxLength = 32767;
+            this.date2.Name = "date2";
+            this.date2.PasswordChar = '\0';
+            this.date2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.date2.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.date2.SelectedText = "";
+            this.date2.SelectionLength = 0;
+            this.date2.SelectionStart = 0;
+            this.date2.ShortcutsEnabled = true;
+            this.date2.Size = new System.Drawing.Size(114, 23);
+            this.date2.TabIndex = 22;
+            this.date2.Text = "Дата Рождения";
+            this.date2.UseSelectable = true;
+            this.date2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.date2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
+            // 
+            // id2
+            // 
+            // 
+            // 
+            // 
+            this.id2.CustomButton.Image = null;
+            this.id2.CustomButton.Location = new System.Drawing.Point(4, 1);
+            this.id2.CustomButton.Name = "";
+            this.id2.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.id2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.id2.CustomButton.TabIndex = 1;
+            this.id2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.id2.CustomButton.UseSelectable = true;
+            this.id2.CustomButton.Visible = false;
+            this.id2.Lines = new string[] {
+        "ID"};
+            this.id2.Location = new System.Drawing.Point(797, 45);
+            this.id2.MaxLength = 32767;
+            this.id2.Name = "id2";
+            this.id2.PasswordChar = '\0';
+            this.id2.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.id2.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.id2.SelectedText = "";
+            this.id2.SelectionLength = 0;
+            this.id2.SelectionStart = 0;
+            this.id2.ShortcutsEnabled = true;
+            this.id2.Size = new System.Drawing.Size(26, 23);
+            this.id2.TabIndex = 21;
+            this.id2.Text = "ID";
+            this.id2.UseSelectable = true;
+            this.id2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.id2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // metroButton4
             // 
@@ -431,7 +554,7 @@ namespace СтажировкаDeeplay
             // 
             // podr1
             // 
-            this.podr1.DataSource = this.подразделениеBindingSource2;
+            this.podr1.DataSource = this.подразделениеBindingSource;
             this.podr1.DisplayMember = "Наименование подразделения";
             this.podr1.FormattingEnabled = true;
             this.podr1.ItemHeight = 23;
@@ -512,70 +635,43 @@ namespace СтажировкаDeeplay
             this.metroGrid1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.metroGrid1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.metroGrid1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle34.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle34.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle34.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle34.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle34.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle34;
             this.metroGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle35.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle35.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle35.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle35.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle35.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.metroGrid1.DefaultCellStyle = dataGridViewCellStyle35;
             this.metroGrid1.EnableHeadersVisualStyles = false;
             this.metroGrid1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.metroGrid1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.metroGrid1.Location = new System.Drawing.Point(0, 0);
             this.metroGrid1.Name = "metroGrid1";
             this.metroGrid1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle36.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle36.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle36.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle36.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle36.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.metroGrid1.RowHeadersDefaultCellStyle = dataGridViewCellStyle36;
             this.metroGrid1.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid1.Size = new System.Drawing.Size(788, 296);
             this.metroGrid1.TabIndex = 1;
             this.metroGrid1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.metroGrid1_CellContentClick);
             this.metroGrid1.SelectionChanged += new System.EventHandler(this.metroGrid1_SelectionChanged);
-            // 
-            // сотрудникиBindingSource
-            // 
-            this.сотрудникиBindingSource.DataMember = "Сотрудники";
-            this.сотрудникиBindingSource.DataSource = this.бДDeeplayDataSetBindingSource;
-            // 
-            // подразделениеBindingSource1
-            // 
-            this.подразделениеBindingSource1.DataMember = "Подразделение";
-            this.подразделениеBindingSource1.DataSource = this.бДDeeplayDataSetBindingSource;
-            // 
-            // сотрудникиTableAdapter
-            // 
-            this.сотрудникиTableAdapter.ClearBeforeFill = true;
-            // 
-            // руководителиTableAdapter
-            // 
-            this.руководителиTableAdapter.ClearBeforeFill = true;
-            // 
-            // подразделениеBindingSource
-            // 
-            this.подразделениеBindingSource.DataMember = "Подразделение";
-            this.подразделениеBindingSource.DataSource = this.бДDeeplayDataSetBindingSource;
-            // 
-            // подразделениеTableAdapter
-            // 
-            this.подразделениеTableAdapter.ClearBeforeFill = true;
             // 
             // metroLabel1
             // 
@@ -586,177 +682,37 @@ namespace СтажировкаDeeplay
             this.metroLabel1.TabIndex = 2;
             this.metroLabel1.Text = "БД Организации";
             // 
+            // бДDeeplayDataSet
+            // 
+            this.бДDeeplayDataSet.DataSetName = "БДDeeplayDataSet";
+            this.бДDeeplayDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // должностиBindingSource
+            // 
+            this.должностиBindingSource.DataMember = "Должности";
+            this.должностиBindingSource.DataSource = this.бДDeeplayDataSet;
+            // 
             // должностиTableAdapter
             // 
             this.должностиTableAdapter.ClearBeforeFill = true;
             // 
-            // tableAdapterManager1
+            // подразделениеBindingSource
             // 
-            this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
-            this.tableAdapterManager1.UpdateOrder = СтажировкаDeeplay.БДDeeplayDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
-            this.tableAdapterManager1.ДолжностиTableAdapter = this.должностиTableAdapter;
-            this.tableAdapterManager1.ПодразделениеTableAdapter = this.подразделениеTableAdapter;
-            this.tableAdapterManager1.ПользователиTableAdapter = null;
-            this.tableAdapterManager1.РуководителиTableAdapter = this.руководителиTableAdapter;
-            this.tableAdapterManager1.СотрудникиTableAdapter = this.сотрудникиTableAdapter;
+            this.подразделениеBindingSource.DataMember = "Подразделение";
+            this.подразделениеBindingSource.DataSource = this.бДDeeplayDataSet;
             // 
-            // id1
+            // подразделениеTableAdapter
             // 
+            this.подразделениеTableAdapter.ClearBeforeFill = true;
             // 
+            // руководителиBindingSource
             // 
+            this.руководителиBindingSource.DataMember = "Руководители";
+            this.руководителиBindingSource.DataSource = this.бДDeeplayDataSet;
             // 
-            this.id1.CustomButton.Image = null;
-            this.id1.CustomButton.Location = new System.Drawing.Point(4, 1);
-            this.id1.CustomButton.Name = "";
-            this.id1.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.id1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.id1.CustomButton.TabIndex = 1;
-            this.id1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.id1.CustomButton.UseSelectable = true;
-            this.id1.CustomButton.Visible = false;
-            this.id1.Lines = new string[] {
-        "ID"};
-            this.id1.Location = new System.Drawing.Point(795, 55);
-            this.id1.MaxLength = 32767;
-            this.id1.Name = "id1";
-            this.id1.PasswordChar = '\0';
-            this.id1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.id1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.id1.SelectedText = "";
-            this.id1.SelectionLength = 0;
-            this.id1.SelectionStart = 0;
-            this.id1.ShortcutsEnabled = true;
-            this.id1.Size = new System.Drawing.Size(26, 23);
-            this.id1.TabIndex = 14;
-            this.id1.Text = "ID";
-            this.id1.UseSelectable = true;
-            this.id1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.id1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            this.id1.Click += new System.EventHandler(this.id1_Click);
+            // руководителиTableAdapter
             // 
-            // date1
-            // 
-            // 
-            // 
-            // 
-            this.date1.CustomButton.Image = null;
-            this.date1.CustomButton.Location = new System.Drawing.Point(92, 1);
-            this.date1.CustomButton.Name = "";
-            this.date1.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.date1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.date1.CustomButton.TabIndex = 1;
-            this.date1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.date1.CustomButton.UseSelectable = true;
-            this.date1.CustomButton.Visible = false;
-            this.date1.Lines = new string[] {
-        "Дата Рождения"};
-            this.date1.Location = new System.Drawing.Point(795, 87);
-            this.date1.MaxLength = 32767;
-            this.date1.Name = "date1";
-            this.date1.PasswordChar = '\0';
-            this.date1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.date1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.date1.SelectedText = "";
-            this.date1.SelectionLength = 0;
-            this.date1.SelectionStart = 0;
-            this.date1.ShortcutsEnabled = true;
-            this.date1.Size = new System.Drawing.Size(114, 23);
-            this.date1.TabIndex = 15;
-            this.date1.Text = "Дата Рождения";
-            this.date1.UseSelectable = true;
-            this.date1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.date1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // id2
-            // 
-            // 
-            // 
-            // 
-            this.id2.CustomButton.Image = null;
-            this.id2.CustomButton.Location = new System.Drawing.Point(4, 1);
-            this.id2.CustomButton.Name = "";
-            this.id2.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.id2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.id2.CustomButton.TabIndex = 1;
-            this.id2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.id2.CustomButton.UseSelectable = true;
-            this.id2.CustomButton.Visible = false;
-            this.id2.Lines = new string[] {
-        "ID"};
-            this.id2.Location = new System.Drawing.Point(797, 45);
-            this.id2.MaxLength = 32767;
-            this.id2.Name = "id2";
-            this.id2.PasswordChar = '\0';
-            this.id2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.id2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.id2.SelectedText = "";
-            this.id2.SelectionLength = 0;
-            this.id2.SelectionStart = 0;
-            this.id2.ShortcutsEnabled = true;
-            this.id2.Size = new System.Drawing.Size(26, 23);
-            this.id2.TabIndex = 21;
-            this.id2.Text = "ID";
-            this.id2.UseSelectable = true;
-            this.id2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.id2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // date2
-            // 
-            // 
-            // 
-            // 
-            this.date2.CustomButton.Image = null;
-            this.date2.CustomButton.Location = new System.Drawing.Point(92, 1);
-            this.date2.CustomButton.Name = "";
-            this.date2.CustomButton.Size = new System.Drawing.Size(21, 21);
-            this.date2.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
-            this.date2.CustomButton.TabIndex = 1;
-            this.date2.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
-            this.date2.CustomButton.UseSelectable = true;
-            this.date2.CustomButton.Visible = false;
-            this.date2.Lines = new string[] {
-        "Дата Рождения"};
-            this.date2.Location = new System.Drawing.Point(797, 82);
-            this.date2.MaxLength = 32767;
-            this.date2.Name = "date2";
-            this.date2.PasswordChar = '\0';
-            this.date2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.date2.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.date2.SelectedText = "";
-            this.date2.SelectionLength = 0;
-            this.date2.SelectionStart = 0;
-            this.date2.ShortcutsEnabled = true;
-            this.date2.Size = new System.Drawing.Size(114, 23);
-            this.date2.TabIndex = 22;
-            this.date2.Text = "Дата Рождения";
-            this.date2.UseSelectable = true;
-            this.date2.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            this.date2.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
-            // 
-            // подразделениеBindingSource2
-            // 
-            this.подразделениеBindingSource2.DataMember = "Подразделение";
-            this.подразделениеBindingSource2.DataSource = this.бДDeeplayDataSetBindingSource;
-            // 
-            // edit
-            // 
-            this.edit.Location = new System.Drawing.Point(884, 216);
-            this.edit.Name = "edit";
-            this.edit.Size = new System.Drawing.Size(75, 23);
-            this.edit.TabIndex = 16;
-            this.edit.Text = "Изменить";
-            this.edit.UseSelectable = true;
-            this.edit.Click += new System.EventHandler(this.edit_Click);
-            // 
-            // edit2
-            // 
-            this.edit2.Location = new System.Drawing.Point(886, 213);
-            this.edit2.Name = "edit2";
-            this.edit2.Size = new System.Drawing.Size(75, 23);
-            this.edit2.TabIndex = 23;
-            this.edit2.Text = "Изменить";
-            this.edit2.UseSelectable = true;
-            this.edit2.Click += new System.EventHandler(this.edit2_Click);
+            this.руководителиTableAdapter.ClearBeforeFill = true;
             // 
             // Form2
             // 
@@ -773,10 +729,6 @@ namespace СтажировкаDeeplay
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.руководителиBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.бДDeeplayDataSetBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.бДDeeplayDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.должностиBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -784,10 +736,10 @@ namespace СтажировкаDeeplay
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.сотрудникиBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.подразделениеBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.бДDeeplayDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.должностиBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.подразделениеBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.подразделениеBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.руководителиBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -801,15 +753,6 @@ namespace СтажировкаDeeplay
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.BindingSource бДDeeplayDataSetBindingSource;
-        private БДDeeplayDataSet бДDeeplayDataSet;
-        private System.Windows.Forms.BindingSource сотрудникиBindingSource;
-        private БДDeeplayDataSetTableAdapters.СотрудникиTableAdapter сотрудникиTableAdapter;
-        private System.Windows.Forms.BindingSource руководителиBindingSource;
-        private БДDeeplayDataSetTableAdapters.РуководителиTableAdapter руководителиTableAdapter;
-        private System.Windows.Forms.BindingSource подразделениеBindingSource;
-        private БДDeeplayDataSetTableAdapters.ПодразделениеTableAdapter подразделениеTableAdapter;
-        private System.Windows.Forms.BindingSource подразделениеBindingSource1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private MetroFramework.Controls.MetroGrid metroGrid2;
         private MetroFramework.Controls.MetroGrid metroGrid1;
@@ -819,15 +762,12 @@ namespace СтажировкаDeeplay
         private System.Windows.Forms.PictureBox pictureBox2;
         private MetroFramework.Controls.MetroLabel metroLabel3;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.BindingSource должностиBindingSource;
-        private БДDeeplayDataSetTableAdapters.ДолжностиTableAdapter должностиTableAdapter;
         private MetroFramework.Controls.MetroComboBox director1;
         private MetroFramework.Controls.MetroTextBox fio1;
         private MetroFramework.Controls.MetroButton metroButton3;
         private MetroFramework.Controls.MetroButton metroButton2;
         private MetroFramework.Controls.MetroButton metroButton1;
         private MetroFramework.Controls.MetroComboBox gender1;
-        private БДDeeplayDataSetTableAdapters.TableAdapterManager tableAdapterManager1;
         private MetroFramework.Controls.MetroButton metroButton4;
         private MetroFramework.Controls.MetroButton metroButton5;
         private MetroFramework.Controls.MetroButton metroButton6;
@@ -839,8 +779,14 @@ namespace СтажировкаDeeplay
         private MetroFramework.Controls.MetroTextBox date1;
         private MetroFramework.Controls.MetroTextBox date2;
         private MetroFramework.Controls.MetroTextBox id2;
-        private System.Windows.Forms.BindingSource подразделениеBindingSource2;
         private MetroFramework.Controls.MetroButton edit;
         private MetroFramework.Controls.MetroButton edit2;
+        private БДDeeplayDataSet бДDeeplayDataSet;
+        private System.Windows.Forms.BindingSource должностиBindingSource;
+        private БДDeeplayDataSetTableAdapters.ДолжностиTableAdapter должностиTableAdapter;
+        private System.Windows.Forms.BindingSource подразделениеBindingSource;
+        private БДDeeplayDataSetTableAdapters.ПодразделениеTableAdapter подразделениеTableAdapter;
+        private System.Windows.Forms.BindingSource руководителиBindingSource;
+        private БДDeeplayDataSetTableAdapters.РуководителиTableAdapter руководителиTableAdapter;
     }
 }

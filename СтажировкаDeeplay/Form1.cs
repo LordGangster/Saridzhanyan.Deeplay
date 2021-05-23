@@ -43,7 +43,7 @@ namespace СтажировкаDeeplay
         {
             if (!String.IsNullOrEmpty(textBox1.Text) && !String.IsNullOrEmpty(textBox2.Text))
             {
-                OleDbConnection connection = new OleDbConnection(@"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = .\БДDeeplay.mdb");
+                OleDbConnection connection = new OleDbConnection(@"Provider = Microsoft.Jet.OLEDB.4.0; Data Source = ..\..\БДDeeplay.mdb");
                 connection.Open();
                 OleDbDataReader reader = new OleDbCommand("SELECT Пользователи.Код FROM Пользователи WHERE " +
                     $"Пользователи.Логин='{textBox1.Text}' AND Пользователи.Пароль='{textBox2.Text}'", connection).ExecuteReader();
